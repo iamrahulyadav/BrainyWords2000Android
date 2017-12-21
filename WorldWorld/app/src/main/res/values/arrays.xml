@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Arrays by categories-->
+    <string-array name="Animals">
+        <item>@string/pets</item>
+        <item>@string/animals</item>
+        <item>@string/babies</item>
+        <item>@string/farm_body</item>
+        <item>@string/families</item>
+        <item>@string/dogs</item>
+        <item>@string/plant</item>
+        <item>@string/meat</item>
+        <item>@string/omnivores</item>
+        <item>@string/pretend</item>
+        <item>@string/wild</item>
+    </string-array>
+
+    <string-array name="Clothing">
+        <item>@string/accessories</item>
+        <item>@string/clothes</item>
+        <item>@string/hats</item>
+        <item>@string/sewing</item>
+        <item>@string/shoes</item>
+        <item>@string/omnivores</item>
+        <item>@string/fashion</item>
+    </string-array>
+
+    <string-array name="Grocery">
+        <item>@string/bread</item>
+        <item>@string/sweets</item>
+        <item>@string/fruits</item>
+        <item>@string/nuts</item>
+        <item>@string/grains</item>
+        <item>@string/berries</item>
+        <item>@string/tubers</item>
+        <item>@string/vegetables</item>
+    </string-array>
+
+    <string-array name="Health">
+        <item>@string/health_equipment</item>
+        <item>@string/nurse</item>
+        <item>@string/pediatrician</item>
+        <item>@string/psychologist</item>
+    </string-array>
+
+    <string-array name="House">
+        <item>@string/bathroom</item>
+        <item>@string/bedroom</item>
+        <item>@string/housewares</item>
+        <item>@string/kitchen</item>
+        <item>@string/livingroom</item>
+    </string-array>
+
+    <string-array name="Mall">
+        <item>@string/restaurant</item>
+        <item>@string/toy</item>
+        <item>@string/vehicle</item>
+        <item>@string/riding</item>
+        <item>@string/percussion</item>
+        <item>@string/brass</item>
+        <item>@string/woodwind</item>
+        <item>@string/strings</item>
+        <item>@string/strings</item>
+        <item>@string/individual</item>
+        <item>@string/team</item>
+        <item>@string/camping</item>
+        <item>@string/mall_gear</item>
+        <item>@string/woodworking</item>
+        <item>@string/rock_dirt</item>
+        <item>@string/girls</item>
+        <item>@string/boys</item>
+    </string-array>
+
+    <string-array name="Outdoors">
+        <item>@string/weather</item>
+        <item>@string/outdoors_gear</item>
+        <item>@string/ocean</item>
+        <item>@string/beach</item>
+        <item>@string/beach_creatures</item>
+        <item>@string/park_creatures</item>
+        <item>@string/equipment</item>
+        <item>@string/bugs</item>
+        <item>@string/birds</item>
+        <item>@string/places</item>
+        <item>@string/tools</item>
+        <item>@string/outdoors_structures</item>
+    </string-array>
+
+    <string-array name="People">
+        <item>@string/face</item>
+        <item>@string/arm_hand</item>
+        <item>@string/leg_foot</item>
+        <item>@string/body</item>
+        <item>@string/feelings</item>
+        <item>@string/family</item>
+        <item>@string/military</item>
+        <item>@string/perform</item>
+        <item>@string/badguys</item>
+        <item>@string/helpers</item>
+        <item>@string/special</item>
+        <item>@string/workers</item>
+        <item>@string/play</item>
+        <item>@string/good</item>
+        <item>@string/bad</item>
+        <item>@string/easy</item>
+        <item>@string/fun</item>
+        <item>@string/work</item>
+        <item>@string/people_boys</item>
+        <item>@string/people_girls</item>
+        <item>@string/women</item>
+        <item>@string/men</item>
+    </string-array>
+
+    <string-array name="School">
+        <item>@string/colors</item>
+        <item>@string/addition</item>
+        <item>@string/numbers</item>
+        <item>@string/letters</item>
+        <item>@string/shapes</item>
+    </string-array>
+
+    <string-array name="Vehicles">
+        <item>@string/passenger</item>
+        <item>@string/working</item>
+        <item>@string/vehicles_public</item>
+        <item>@string/truck</item>
+        <item>@string/vehicles_fun</item>
+        <item>@string/vehicles_structures</item>
+        <item>@string/sidewalk</item>
+    </string-array>
+
+
+</resources>

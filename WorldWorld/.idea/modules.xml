@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WorldWorld.iml" filepath="$PROJECT_DIR$/WorldWorld.iml" />
+      <module fileurl="file://C:\Users\Michael Townsend\Desktop\BrainyWords\WorldWorld\WorldWorld.iml" filepath="C:\Users\Michael Townsend\Desktop\BrainyWords\WorldWorld\WorldWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Michael Townsend\Desktop\BrainyWords\WorldWorld\app\app.iml" filepath="C:\Users\Michael Townsend\Desktop\BrainyWords\WorldWorld\app\app.iml" />
+    </modules>
+  </component>
+</project>
