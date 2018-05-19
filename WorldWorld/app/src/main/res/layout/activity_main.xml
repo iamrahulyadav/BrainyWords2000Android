@@ -637,8 +637,13 @@
               <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                android:background="@drawable/building2a"
                 android:layout_weight="1">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/building2a"
+                      android:adjustViewBounds="true"/>
 
                 <Button
                     android:id="@+id/guitar"
@@ -944,8 +949,13 @@
               <RelativeLayout
                   android:layout_width="wrap_content"
                   android:layout_height="300dp"
-                  android:background="@drawable/building2b"
                   android:layout_weight="1">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/building2b"
+                      android:adjustViewBounds="true"/>
 
                     <Button
                         android:id="@+id/traffic_cones2b"

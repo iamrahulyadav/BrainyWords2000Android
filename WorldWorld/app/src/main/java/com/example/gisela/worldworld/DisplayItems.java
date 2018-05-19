@@ -1,23 +1,15 @@
 package com.example.gisela.worldworld;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
-import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -31,7 +23,7 @@ import java.util.List;
 public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickListener{
 
     private List<String> fileNameList;
-    private RecyclerView mrecyclerView;
+    private RecyclerView mRecyclerView;
     private LinearLayoutManager mLinearLayoutManager;
     private MyAdapter adapter;
     private String cat;
@@ -52,13 +44,13 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
         play = new MediaPlayer();
 
         //recycler view code and get data
-        mrecyclerView = (RecyclerView) findViewById(R.id.drawerList);
-        adapter = new MyAdapter(getApplicationContext(),getData());
+        mRecyclerView = (RecyclerView) findViewById(R.id.drawerList);
+        adapter = new MyAdapter(getApplicationContext(), getData());
         adapter.setClickListener(this);
-        mrecyclerView.setAdapter(adapter);
+        mRecyclerView.setAdapter(adapter);
 
         mLinearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        mrecyclerView.setLayoutManager(mLinearLayoutManager);
+        mRecyclerView.setLayoutManager(mLinearLayoutManager);
 
 
     }
@@ -67,7 +59,7 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
     {
 
         Item current;
-        List<Item> data=new ArrayList<>();
+        List<Item> data = new ArrayList<>();
         Drawable image;
 
         AssetManager assets = getAssets(); // get app's AssetManager
