@@ -169,13 +169,12 @@ public class Interior extends AppCompatActivity {
         String tag = view.getTag().toString();
         String cat = Parse(tag); //get cat
         playCategorySound(cat);
-        Thread.sleep(2000);
+        while (play.isPlaying()){}
         Intent itemsActivity = new Intent(this, DisplayItems.class);
         Bundle b = new Bundle();
         b.putString("cat",tag);
         itemsActivity.putExtras(b);
         startActivity(itemsActivity);
-        finish();
     }
 
     public void playSound(View view)
@@ -212,13 +211,12 @@ public class Interior extends AppCompatActivity {
 
         String tag = view.getTag().toString();
         playCategorySound(tag);
-        Thread.sleep(2000);
+        while(play.isPlaying()) {}
         Intent interiorActivity = new Intent(this, Interior.class);
         Bundle b = new Bundle();
         b.putString("cat",tag);
         interiorActivity.putExtras(b);
         startActivity(interiorActivity);
-        finish();
     }
 
     public void goHome (View view)
@@ -269,7 +267,7 @@ public class Interior extends AppCompatActivity {
 
     public void playCategorySound(String cat)
     {
-        AssetFileDescriptor openassets;
+        AssetFileDescriptor openAssets;
 
         if(cat.contains("zoo"))
         {
@@ -309,10 +307,10 @@ public class Interior extends AppCompatActivity {
             {
                 play.reset();
                 //open audio file from Assets folder
-                openassets = getAssets().openFd("xtra/HEADINGS/00" + cat + ".mp3");
+                openAssets = getAssets().openFd("xtra/HEADINGS/00" + cat + ".mp3");
 
                 play = new MediaPlayer();
-                play.setDataSource(openassets.getFileDescriptor(),openassets.getStartOffset(),openassets.getLength());
+                play.setDataSource(openAssets.getFileDescriptor(),openAssets.getStartOffset(),openAssets.getLength());
                 play.prepare();
                 play.start();
 

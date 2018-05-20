@@ -541,8 +541,8 @@
             android:layout_height="40dp" />
 
         <ImageButton
-            android:id="@+id/home"
-            android:onClick="goHome"
+            android:id="@+id/back"
+            android:onClick="goBack"
             android:tag="@string/interiors"
             android:background="@drawable/home"
             android:layout_width="40dp"

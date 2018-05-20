@@ -32,7 +32,7 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_animals_dogs);
+        setContentView(R.layout.activity_display_items);
 
         //get value of the tag (press button)
         Bundle b = getIntent().getExtras();
@@ -178,9 +178,16 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
 
     }
 
-    public void goHome (View view)
+    public void goBack(View view)
     {
         finish();
+    }
+
+    public void goHome(View view)
+    {
+        Intent home = new Intent(this, MainActivity.class);
+        home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(home);
     }
 
     @Override

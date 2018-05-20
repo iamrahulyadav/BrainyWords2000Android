@@ -570,8 +570,8 @@ public class Quiz extends AppCompatActivity {
     public void goHome (View view)
     {
         Intent home = new Intent(Quiz.this, MainActivity.class);
+        home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(home);
-        finish();
     }
 
     public void goBack (View view)

@@ -126,8 +126,8 @@
             android:layout_alignParentEnd="true" />
 
         <ImageButton
-            android:id="@+id/home"
-            android:onClick="goHome"
+            android:id="@+id/back"
+            android:onClick="goBack"
             android:background="@drawable/home"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
@@ -142,8 +142,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/home"
-            android:layout_toEndOf="@+id/home" />
+            android:layout_toRightOf="@+id/back"
+            android:layout_toEndOf="@+id/back" />
 
 
     </RelativeLayout>

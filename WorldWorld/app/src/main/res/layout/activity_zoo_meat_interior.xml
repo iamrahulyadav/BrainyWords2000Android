@@ -38,8 +38,8 @@
             android:layout_centerHorizontal="true"/>
 
         <ImageButton
-            android:id="@+id/home"
-            android:onClick="goHome"
+            android:id="@+id/back"
+            android:onClick="goBack"
             android:tag="@string/interiors"
             android:background="@drawable/home"
             android:layout_width="40dp"
@@ -56,9 +56,9 @@
             android:background="@drawable/fact"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/home"
-            android:layout_alignLeft="@+id/home"
-            android:layout_alignStart="@+id/home" />
+            android:layout_below="@+id/back"
+            android:layout_alignLeft="@+id/back"
+            android:layout_alignStart="@+id/back" />
 
     </RelativeLayout>
     <RelativeLayout

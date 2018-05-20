@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         String tag = view.getTag().toString();
         String cat = Parse(tag); //get cat
         playCategorySound(cat);
-        Thread.sleep(2000);
+        while(play.isPlaying()){}
         Intent itemsActivity = new Intent(this, DisplayItems.class);
         Bundle b = new Bundle();
         b.putString("cat",tag);
@@ -186,13 +186,12 @@ public class MainActivity extends AppCompatActivity {
 
         String tag = view.getTag().toString();
         playCategorySound(tag);
-        Thread.sleep(2000);
+        while(play.isPlaying()){}
         Intent interiorActivity = new Intent(this, Interior.class);
         Bundle b = new Bundle();
         b.putString("cat",tag);
         interiorActivity.putExtras(b);
         startActivity(interiorActivity);
-        //finish();
     }
 
     public String Parse(String tag)
