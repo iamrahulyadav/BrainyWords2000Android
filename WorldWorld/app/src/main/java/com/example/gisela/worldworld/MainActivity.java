@@ -124,13 +124,14 @@ public class MainActivity extends AppCompatActivity {
                                 float distanceY) {
 
             int maxScrollX = hsv.getChildAt(0).getMeasuredWidth()-hsv.getMeasuredWidth();
-            if(hsv.getScrollX() == maxScrollX)
+            if(hsv.getScrollX() >= maxScrollX - 1)
             {
-                hsv.scrollTo(hsv.getScrollX() - 40000, hsv.getScrollY());
+                hsv.scrollTo(1, hsv.getScrollY());
             }
             else if(hsv.getScrollX() == 0)
             {
-                hsv.scrollTo(hsv.getScrollX() + 40000, hsv.getScrollY());
+                //hsv.scrollTo(hsv.getScrollX() + 40000, hsv.getScrollY());
+                hsv.scrollTo(maxScrollX - 2, hsv.getScrollY());
             }
 
             return true;

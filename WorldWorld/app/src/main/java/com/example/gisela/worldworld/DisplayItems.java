@@ -186,7 +186,7 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
     public void goHome(View view)
     {
         Intent home = new Intent(this, MainActivity.class);
-        home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(home);
     }
 
