@@ -22,7 +22,8 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:weightSum="1"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:id="@+id/street_scenes">
 
             <include layout="@layout/street1"/>
             <include layout="@layout/street2"/>
@@ -41,6 +42,7 @@
             <include layout="@layout/street15"/>
             <include layout="@layout/street16"/>
             <include layout="@layout/street17"/>
+            <include layout="@layout/street1"/>
 
         </LinearLayout>
 

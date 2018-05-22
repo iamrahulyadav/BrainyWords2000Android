@@ -122,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
                                 float distanceY) {
-
-            int maxScrollX = hsv.getChildAt(0).getMeasuredWidth()-hsv.getMeasuredWidth();
+            LinearLayout streetScenes = (LinearLayout) findViewById(R.id.street_scenes);
+            int maxScrollX = streetScenes.getMeasuredWidth() - streetScenes.getChildAt(0).getMeasuredWidth();
             if(hsv.getScrollX() >= maxScrollX - 1)
             {
                 hsv.scrollTo(1, hsv.getScrollY());
