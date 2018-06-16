@@ -25,7 +25,7 @@
             android:baselineAligned="false"
             android:id="@+id/street_scenes">
 
-            <include layout="@layout/street1"/>
+            <include layout="@layout/street1test"/>
             <include layout="@layout/street2"/>
             <include layout="@layout/street3"/>
             <include layout="@layout/street4"/>

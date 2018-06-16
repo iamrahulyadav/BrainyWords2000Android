@@ -21,6 +21,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.ScaleAnimation;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer play;
     private HorizontalScrollView hsv;
     private TextView mBrainyWords;
+    private LinearLayout streetScenes;
 
     //Zoom
     private float mScale = 1f;
@@ -59,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
 
+        streetScenes = (LinearLayout) findViewById(R.id.street_scenes);
+        Matrix scalingMatrix = new Matrix();
         hsv = (HorizontalScrollView) findViewById(R.id.horizontal_scroll);
         mBrainyWords = (TextView) findViewById(R.id.BrainyWords);
 
