@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
+<RelativeLayout android:layout_height="300dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/building13"
     android:layout_weight="1"

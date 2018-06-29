@@ -116,6 +116,20 @@
         android:layout_toEndOf="@+id/tricycle" />
 
     <Button
+        android:id="@+id/shadow"
+        android:layout_width="36dp"
+        android:layout_height="137dp"
+        android:layout_alignTop="@+id/motocycle"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="63dp"
+        android:layout_toEndOf="@+id/tricycle"
+        android:layout_toRightOf="@+id/tricycle"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/shadow.mp3" />
+
+    <Button
         android:onClick="playSound"
         android:tag="xtra/pedestrian.mp3"
         android:background="@null"

@@ -8,8 +8,9 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/building2b"
-            android:adjustViewBounds="true"/>
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/building2b" />
 
         <Button
             android:id="@+id/traffic_cones2b"
@@ -20,10 +21,10 @@
             android:background="@null"
             android:onClick="playSound"
             android:tag="Construction/sounds/14traffic_cones.mp3"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="58dp" />
+            android:layout_marginTop="58dp" />
 
         <Button
             android:id="@+id/traffic_cones3"
@@ -75,7 +76,7 @@
             android:layout_width="60dp"
             android:layout_height="120dp"
             android:background="@null"
-            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
             android:layout_alignLeft="@+id/traffic_cones2b"
             android:layout_alignStart="@+id/traffic_cones2b"
             android:layout_marginLeft="97dp"
@@ -370,7 +371,7 @@
             android:layout_height="70dp"
             android:layout_alignBaseline="@+id/dirt"
             android:layout_alignBottom="@+id/dirt"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
             android:background="@null"
             android:onClick="playSound"
             android:tag="xtra/dirt.mp3" />
@@ -405,8 +406,8 @@
             android:onClick="playSound"
             android:tag="People/people/men/sounds/04brick_layer_or_brick_mason_.mp3"
             android:layout_alignTop="@+id/man_walking_dog"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentLeft="true"
+            />
 
         <Button
             android:id="@+id/jack_lantern"
