@@ -47,7 +47,7 @@
     <string name="pediatrician_midbody">Health/pediatrician/midbody</string>
     <string name="pediatrician_upperbody">Health/pediatrician/upper_body</string>
     <string name="pediatrician_legs">Health/pediatrician/legs</string>
-    <string name="psychologist">Health/psychologist</string>
+    <string name="psychologist">Health/feelings</string>
     <!--Mall array-->
     <string name="restaurant">Mall/restaurant</string>
     <string name="boys">Mall/hair_salon/boys</string>

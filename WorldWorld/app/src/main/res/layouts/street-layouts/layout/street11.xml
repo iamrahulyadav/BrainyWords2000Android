@@ -475,15 +475,16 @@
         android:layout_alignEnd="@+id/dolphin" />
 
     <Button
-        android:onClick="playSound"
-        android:tag="Construction/sounds/14traffic_cones.mp3"
-        android:background="@null"
         android:id="@+id/traffic_cones"
-        android:layout_height="40dp"
         android:layout_width="40dp"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/police_car"
         android:layout_alignLeft="@+id/flatbed_truck"
-        android:layout_alignStart="@+id/flatbed_truck" />
+        android:layout_alignStart="@+id/flatbed_truck"
+        android:layout_marginBottom="14dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="Construction/sounds/14traffic_cones.mp3" />
 
     <Button
         android:onClick="playSound"

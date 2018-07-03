@@ -200,14 +200,28 @@
 
         <Button
             android:id="@+id/safety_barrier1"
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
+            android:layout_width="27dp"
+            android:layout_height="100dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="701dp"
-            android:layout_marginStart="701dp"
-            android:layout_marginTop="61dp"
+            android:layout_marginLeft="694dp"
+            android:layout_marginStart="694dp"
+            android:layout_marginTop="9dp"
+            android:background="@null"
+            android:onClick="playSound"
+            android:tag="Construction/sounds/13safety_barrier.mp3" />
+
+        <Button
+            android:id="@+id/safety_barrier2"
+            android:layout_width="27dp"
+            android:layout_height="59dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="746dp"
+            android:layout_marginStart="746dp"
+            android:layout_marginTop="148dp"
             android:background="@null"
             android:onClick="playSound"
             android:tag="Construction/sounds/13safety_barrier.mp3" />
