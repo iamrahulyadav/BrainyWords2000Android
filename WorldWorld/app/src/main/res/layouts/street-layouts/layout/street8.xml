@@ -385,6 +385,46 @@
         android:layout_height="90dp" />
 
     <Button
+        android:id="@+id/crosswalk"
+        android:layout_width="11dp"
+        android:layout_height="91dp"
+        android:layout_alignBottom="@+id/buffalo"
+        android:layout_alignEnd="@+id/calf"
+        android:layout_alignRight="@+id/calf"
+        android:layout_marginEnd="-13dp"
+        android:layout_marginRight="-13dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/crosswalk.mp3" />
+
+    <Button
+        android:id="@+id/crosswalk1"
+        android:layout_width="16dp"
+        android:layout_height="91dp"
+        android:layout_alignBottom="@+id/buffalo"
+        android:layout_alignEnd="@+id/calf"
+        android:layout_alignRight="@+id/calf"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/crosswalk.mp3" />
+
+    <Button
+        android:id="@+id/crosswalk2"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/buffalo"
+        android:layout_alignEnd="@+id/calf"
+        android:layout_alignRight="@+id/calf"
+        android:layout_marginBottom="97dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/crosswalk.mp3" />
+
+    <Button
         android:id="@+id/crossing_guard_stop"
         android:background="@null"
         android:onClick="playSound"
@@ -512,14 +552,15 @@
 
     <Button
         android:id="@+id/building7a"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_above="@+id/fireplug1"
+        android:layout_marginBottom="26dp"
+        android:layout_toLeftOf="@+id/runner_man"
+        android:layout_toStartOf="@+id/runner_man"
         android:background="@null"
         android:onClick="openInterior"
-        android:tag="building7"
-        android:layout_height="100dp"
-        android:layout_width="300dp"
-        android:layout_above="@+id/fireplug1"
-        android:layout_toLeftOf="@+id/runner_man"
-        android:layout_toStartOf="@+id/runner_man" />
+        android:tag="building7" />
 
     <Button
         android:id="@+id/boy_skateboard1"
@@ -546,12 +587,40 @@
         android:tag="people" />
 
     <Button
+        android:id="@+id/sign13people"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-300dp"
+        android:layout_marginRight="-300dp"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/building7a"
+        android:layout_toStartOf="@+id/building7a"
+        android:background="@null"
+        android:onClick="openInterior"
+        android:tag="people" />
+
+    <Button
         android:id="@+id/sign14"
         android:layout_width="42dp"
         android:layout_height="40dp"
         android:layout_above="@+id/dancing_woman1"
         android:layout_marginLeft="-12dp"
         android:layout_marginStart="-12dp"
+        android:layout_toEndOf="@+id/dancing_woman1"
+        android:layout_toRightOf="@+id/dancing_woman1"
+        android:background="@null"
+        android:onClick="openInterior"
+        android:tag="things" />
+
+    <Button
+        android:id="@+id/sign14sky"
+        android:layout_width="177dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/dancing_woman1"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginStart="-70dp"
         android:layout_toEndOf="@+id/dancing_woman1"
         android:layout_toRightOf="@+id/dancing_woman1"
         android:background="@null"

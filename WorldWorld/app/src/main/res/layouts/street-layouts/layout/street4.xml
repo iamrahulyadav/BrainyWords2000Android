@@ -215,7 +215,7 @@
             android:layout_marginStart="26dp"
             android:background="@null"
             android:onClick="openInterior"
-            android:tag="vehicle"
+            android:tag="vehicles"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/electric_car1"
             android:layout_toEndOf="@+id/electric_car1" />

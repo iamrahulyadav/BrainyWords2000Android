@@ -69,7 +69,33 @@
 
     <Button android:background="@null" android:id="@+id/cake" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="30dp" android:layout_marginLeft="895dp" android:layout_marginStart="895dp" android:layout_marginTop="32dp" android:layout_width="40dp" android:onClick="playSound" android:tag="Grocery/bakery/sweets/sounds/01cake.mp3" />
 
-    <Button android:background="@null" android:id="@+id/bunny_mask" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="20dp" android:layout_marginLeft="919dp" android:layout_marginStart="919dp" android:layout_marginTop="62dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Mall/toys/toy/sounds/18mask_of_bunny.mp3" />
+    <Button
+        android:id="@+id/bunny_mask"
+        android:layout_width="26dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="912dp"
+        android:layout_marginStart="912dp"
+        android:layout_marginTop="59dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="Mall/toys/toy/sounds/18mask_of_bunny.mp3" />
+
+    <Button
+        android:id="@+id/bunny_slippers"
+        android:layout_width="16dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="878dp"
+        android:layout_marginStart="878dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/03_these_slippers_are_not_real_bunnies.mp3" />
 
     <Button android:background="@null" android:id="@+id/gingerbread" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="40dp" android:layout_marginLeft="949dp" android:layout_marginStart="949dp" android:layout_marginTop="19dp" android:layout_width="20dp" android:onClick="playSound" android:tag="Grocery/bakery/sweets/sounds/08Gingerbread_Man.mp3" />
 
@@ -109,7 +135,19 @@
         android:onClick="playSound"
         android:tag="xtra/15_a_flatbed_truck_with_three_tires_showing.mp3" />
 
-    <Button android:background="@null" android:id="@+id/citybusa" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="60dp" android:layout_marginLeft="595dp" android:layout_marginStart="595dp" android:layout_marginTop="89dp" android:layout_width="300dp" android:onClick="playSound" android:tag="Vehicles/public/sounds/02city_bus.mp3" />
+    <Button
+        android:id="@+id/citybusa"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="595dp"
+        android:layout_marginStart="595dp"
+        android:layout_marginTop="91dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="Vehicles/public/sounds/02city_bus.mp3" />
 
     <Button android:background="@null" android:id="@+id/snowblower" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="130dp" android:layout_marginLeft="719dp" android:layout_marginStart="719dp" android:layout_marginTop="149dp" android:layout_width="230dp" android:onClick="playSound" android:tag="Vehicles/public/sounds/09snow_blower.mp3" />
 
@@ -191,7 +229,19 @@
 
     <Button android:background="@null" android:id="@+id/saint_bernarda" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="836dp" android:layout_marginStart="836dp" android:layout_marginTop="39dp" android:layout_width="15dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/13Saint_bernard.mp3" />
 
-    <Button android:background="@null" android:id="@+id/bench1a" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="20dp" android:layout_marginLeft="867dp" android:layout_marginStart="867dp" android:layout_marginTop="82dp" android:layout_width="40dp" android:onClick="playSound" android:tag="House/livingroom/sounds/11bench.mp3" />
+    <Button
+        android:id="@+id/bench1a"
+        android:layout_width="13dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="894dp"
+        android:layout_marginStart="894dp"
+        android:layout_marginTop="73dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="House/livingroom/sounds/11bench.mp3" />
 
     <Button android:background="@null" android:id="@+id/street_light1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="20dp" android:layout_marginLeft="929dp" android:layout_marginStart="929dp" android:layout_marginTop="-6dp" android:layout_width="40dp" android:onClick="playSound" android:tag="xtra/street_light.mp3" />
 

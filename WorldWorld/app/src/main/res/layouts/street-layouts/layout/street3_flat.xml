@@ -126,7 +126,7 @@
             android:layout_marginTop="6dp"
             android:background="@null"
             android:onClick="playSound"
-            android:tag="xtra/invisible/02_do_you_think_maybe_a_mole.mp3" />
+            android:tag="xtra/invisible/if fairies were hiding here.mp3" />
 
         <Button
             android:id="@+id/fireplug"
