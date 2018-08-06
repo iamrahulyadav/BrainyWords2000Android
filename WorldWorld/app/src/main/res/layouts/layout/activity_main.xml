@@ -30,7 +30,7 @@
             <include layout="@layout/street3_flat"/>
             <include layout="@layout/street4"/>
             <include layout="@layout/street5"/>
-            <include layout="@layout/street6"/>
+            <include layout="@layout/street6_flat"/>
             <include layout="@layout/street7"/>
             <include layout="@layout/street8"/>
             <include layout="@layout/street9"/>

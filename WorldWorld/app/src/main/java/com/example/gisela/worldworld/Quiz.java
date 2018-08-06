@@ -57,6 +57,8 @@ public class Quiz extends AppCompatActivity {
     private int scoins = 0;
     private int bags = 0;
 
+    private int currentPraiseIndex = 0;
+
     private List<String> soundpath1;
     private List<String> congrats;
 
@@ -156,6 +158,19 @@ public class Quiz extends AppCompatActivity {
         mquestionText.setText(mQuestionLibrary.getQuestionText());
 
         mAnswer = mQuestionLibrary.getAnswer();
+    }
+
+    public void repeatQuestion(View view)
+    {
+        if (!mQuestionLibrary.getQuestion().isPlaying()) {
+            try {
+                mQuestionLibrary.getQuestion().stop();
+                mQuestionLibrary.getQuestion().prepare();
+                mQuestionLibrary.getQuestion().start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void updateQuestion()
@@ -259,7 +274,7 @@ public class Quiz extends AppCompatActivity {
 
     public void getQuizData()
     {
-        final MediaPlayer mSoundQuestion;
+        MediaPlayer mSoundQuestion;
         Drawable image1;
         Drawable image2;
         Drawable image3;
@@ -319,12 +334,6 @@ public class Quiz extends AppCompatActivity {
 
             mSoundQuestion = new MediaPlayer();
             mSoundQuestion.setDataSource(openassets.getFileDescriptor(),openassets.getStartOffset(),openassets.getLength());
-            mSoundQuestion.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mediaPlayer) {
-                    mediaPlayer.release();
-                }
-            });
 
             //get all the paths of the files inside the category folder
             List<String> imagepath = new LinkedList<String>(Arrays.asList(assets.list(cat)));
@@ -388,7 +397,8 @@ public class Quiz extends AppCompatActivity {
                     break;
                 }
             }
-
+            if (mQuestionLibrary != null)
+                mQuestionLibrary.getQuestion().release();
             mQuestionLibrary = new QuestionLibrary(mSoundQuestion, questionText, image1, image2, image3, image4, correctImage);
         } // end try
         catch (IOException e)
@@ -468,6 +478,7 @@ public class Quiz extends AppCompatActivity {
 
     public void playCorrectAnswer()
     {
+
         AssetManager assets = getAssets(); // get app's AssetManager
         AssetFileDescriptor openassets;
         String path = "Quiz_Sounds/correct";
@@ -482,12 +493,12 @@ public class Quiz extends AppCompatActivity {
 
             congrats = new LinkedList<>(Arrays.asList(congrat));
 
-            //shuffle sounds
-            Collections.shuffle(congrats);
-            n = num.nextInt(congrats.size()-1);
-
             play.reset();
-            openassets = getAssets().openFd(path + "/" + congrats.get(n));
+            openassets = getAssets().openFd(path + "/" + congrats.get(currentPraiseIndex));
+
+            //Increment the current praise word
+            currentPraiseIndex = (currentPraiseIndex + 1) % congrats.size();
+
             play.setDataSource(openassets.getFileDescriptor(),openassets.getStartOffset(),openassets.getLength());
             play.prepare();
             play.start();

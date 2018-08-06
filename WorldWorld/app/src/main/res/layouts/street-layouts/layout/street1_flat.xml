@@ -7,22 +7,58 @@
 
     <Button android:background="@null" android:id="@+id/bakerystore" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="100dp" android:layout_marginLeft="761dp" android:layout_marginStart="761dp" android:layout_marginTop="10dp" android:layout_width="75dp" android:onClick="openInterior" android:tag="bakery" />
 
-    <Button android:background="@null" android:id="@+id/cockerspaniela" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="30dp" android:layout_marginLeft="14dp" android:layout_marginStart="14dp" android:layout_marginTop="22dp" android:layout_width="40dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/04Cocker_spaniel.mp3" />
+    <Button
+        android:id="@+id/cockerspaniela"
+        android:layout_width="40dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="Animals/dogs/sounds/04cocker_spaniel.mp3" />
 
     <Button android:background="@null" android:id="@+id/dachshund" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="30dp" android:layout_marginLeft="54dp" android:layout_marginStart="54dp" android:layout_marginTop="34dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/03Dachshund.mp3" />
 
-    <Button android:background="@null" android:id="@+id/hotdog" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="18dp" android:layout_marginLeft="84dp" android:layout_marginStart="84dp" android:layout_marginTop="46dp" android:layout_width="15dp" android:onClick="playSound" android:tag="Mall/restaurant/sounds/04hot_dog.mp3" />
+    <Button
+        android:id="@+id/hotdog"
+        android:layout_width="47dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="29dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="Mall/restaurant/sounds/04hot_dog.mp3" />
 
 
     <Button android:background="@null" android:id="@+id/germansheperd" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="40dp" android:layout_marginLeft="120dp" android:layout_marginStart="120dp" android:layout_marginTop="34dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/09German_shepherd.mp3" />
 
     <Button android:background="@null" android:id="@+id/soccerball" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="20dp" android:layout_marginLeft="109dp" android:layout_marginStart="109dp" android:layout_marginTop="54dp" android:layout_width="20dp" android:onClick="playSound" android:tag="Mall/sports/team/sounds/03soccer_ball.mp3" />
 
-    <Button android:background="@null" android:id="@+id/poodlea" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="25dp" android:layout_marginLeft="164dp" android:layout_marginStart="164dp" android:layout_marginTop="39dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/05Poodle.mp3" />
+    <Button android:background="@null" android:id="@+id/poodlea" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="25dp" android:layout_marginLeft="164dp" android:layout_marginStart="164dp" android:layout_marginTop="39dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/05poodle.mp3" />
 
     <Button android:background="@null" android:id="@+id/butterflya" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="10dp" android:layout_marginLeft="277dp" android:layout_marginStart="277dp" android:layout_marginTop="24dp" android:layout_width="10dp" android:onClick="playSound" android:tag="Outdoors/park/bugs/sounds/03butterfly.mp3" />
 
-    <Button android:background="@null" android:id="@+id/collie" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="40dp" android:layout_marginLeft="277dp" android:layout_marginStart="277dp" android:layout_marginTop="34dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/07Collie.mp3" />
+    <Button
+        android:id="@+id/collie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="277dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="26dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="Animals/dogs/sounds/07collie.mp3" />
 
     <Button android:background="@null" android:id="@+id/crayons" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="40dp" android:layout_marginLeft="339dp" android:layout_marginStart="339dp" android:layout_marginTop="14dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Mall/toys/toy/sounds/06crayons.mp3" />
 
@@ -163,7 +199,19 @@
 
     <Button android:background="@null" android:id="@+id/forkliftz" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="80dp" android:layout_marginLeft="307dp" android:layout_marginStart="307dp" android:layout_marginTop="61dp" android:layout_width="50dp" android:onClick="playSound" android:tag="Vehicles/working/sounds/06forklift.mp3" />
 
-    <Button android:background="@null" android:id="@+id/pelican" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="40dp" android:layout_marginLeft="298dp" android:layout_marginStart="298dp" android:layout_marginTop="4dp" android:layout_width="40dp" android:onClick="playSound" android:tag="xtra/pelican.mp3" />
+    <Button
+        android:id="@+id/pelican"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="304dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/pelican.mp3" />
 
     <Button
         android:id="@+id/girl_tablet"
@@ -227,7 +275,7 @@
         android:onClick="playSound"
         android:tag="People/people/men/sounds/08pirate _looking_through_a_spyglass.mp3" />
 
-    <Button android:background="@null" android:id="@+id/saint_bernarda" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="836dp" android:layout_marginStart="836dp" android:layout_marginTop="39dp" android:layout_width="15dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/13Saint_bernard.mp3" />
+    <Button android:background="@null" android:id="@+id/saint_bernarda" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="836dp" android:layout_marginStart="836dp" android:layout_marginTop="39dp" android:layout_width="15dp" android:onClick="playSound" android:tag="Animals/dogs/sounds/13Saint_Bernard.mp3" />
 
     <Button
         android:id="@+id/bench1a"
@@ -247,7 +295,7 @@
 
     <Button android:background="@null" android:id="@+id/rocking_horse" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="40dp" android:layout_marginLeft="555dp" android:layout_marginStart="555dp" android:layout_marginTop="15dp" android:layout_width="40dp" android:onClick="playSound" android:tag="Mall/toys/riding/sounds/01rocking_horse.mp3" />
 
-    <Button android:background="@null" android:id="@+id/jack_in_the_box1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="399dp" android:layout_marginStart="399dp" android:layout_marginTop="32dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Mall/toys/toy/sounds/05jack_in_the_box.mp3" />
+    <Button android:background="@null" android:id="@+id/jack_in_the_box1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="399dp" android:layout_marginStart="399dp" android:layout_marginTop="32dp" android:layout_width="30dp" android:onClick="playSound" android:tag="Mall/toys/toy/sounds/05Jack_in_the_box.mp3" />
 
     <Button android:background="@null" android:id="@+id/secret_child_stuff" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="369dp" android:layout_marginStart="369dp" android:layout_marginTop="88dp" android:layout_width="30dp" android:onClick="playSound" android:tag="xtra/secret_child_stuff.mp3" />
 

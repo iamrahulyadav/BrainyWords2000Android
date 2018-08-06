@@ -211,7 +211,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="People/job/performers/sounds/11sumo-wrestler_.mp3"
+        android:tag="People/job/performers/sounds/11sumo_wrestler_.mp3"
         android:background="@null"
         android:id="@+id/sumo"
         android:layout_width="50dp"

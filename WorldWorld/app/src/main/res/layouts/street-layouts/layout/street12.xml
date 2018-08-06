@@ -155,7 +155,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="People/job/workers/sounds/01Airplane_Pilot.mp3"
+        android:tag="People/job/workers/sounds/01airplane_pilot.mp3"
         android:background="@null"
         android:id="@+id/airplane_pilot"
         android:layout_width="40dp"

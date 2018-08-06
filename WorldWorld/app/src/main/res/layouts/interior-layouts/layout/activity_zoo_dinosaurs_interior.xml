@@ -17,16 +17,6 @@
         android:layout_width="80dp">
 
         <ImageButton
-            android:id="@+id/interiors"
-            android:onClick="openQuiz"
-            android:tag="@string/birds"
-            android:background="@drawable/question"
-            android:layout_margin="5dp"
-            android:layout_height="40dp"
-            android:layout_width="40dp"
-            android:layout_centerHorizontal="true"/>
-
-        <ImageButton
             android:id="@+id/back"
             android:onClick="goBack"
             android:background="@drawable/back"
@@ -75,15 +65,15 @@
         android:layout_width="350dp" />
 
         <Button
-            android:onClick="playSound"
-            android:background="@null"
-            android:tag="Animals/zoo/voices/triceratops.mp3"
             android:id="@+id/triceratops"
             android:layout_width="100dp"
-            android:layout_height="130dp"
+            android:layout_height="112dp"
             android:layout_alignTop="@+id/pterodactyl"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="36dp" />
+            android:layout_marginTop="54dp"
+            android:background="@null"
+            android:onClick="playSound"
+            android:tag="Animals/zoo/voices/triceratops.mp3" />
 
         <Button
             android:onClick="playSound"
@@ -114,7 +104,7 @@
         <Button
             android:onClick="playSound"
             android:background="@null"
-            android:tag="Animals/zoo/voices/stegosaurus.mp3"
+            android:tag="Animals/zoo/voices/stegasaurus.mp3"
             android:id="@+id/stegosaurus"
             android:layout_marginRight="16dp"
             android:layout_marginEnd="16dp"
@@ -149,10 +139,9 @@
             android:layout_height="25dp"
             android:layout_marginLeft="13dp"
             android:layout_marginStart="13dp"
-            android:layout_alignTop="@+id/triceratops"
+            android:layout_alignTop="@+id/triceratops_1"
             android:layout_toRightOf="@+id/triceratops_1"
-            android:layout_toEndOf="@+id/triceratops_1"
-            android:layout_marginTop="-12dp" />
+            android:layout_toEndOf="@+id/triceratops_1" />
 
         <Button
             android:onClick="playSound"
@@ -165,10 +154,9 @@
             android:layout_height="25dp"
             android:layout_marginLeft="12dp"
             android:layout_marginStart="12dp"
-            android:layout_alignTop="@+id/triceratops"
+            android:layout_alignTop="@+id/triceratops_2"
             android:layout_toRightOf="@+id/triceratops_2"
-            android:layout_toEndOf="@+id/triceratops_2"
-            android:layout_marginTop="-12dp" />
+            android:layout_toEndOf="@+id/triceratops_2" />
 
         <Button
             android:onClick="playSound"
@@ -195,12 +183,10 @@
             android:layout_height="25dp"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="11dp"
-            android:layout_alignTop="@+id/triceratops"
+            android:layout_alignTop="@+id/trex_1"
             android:layout_toRightOf="@+id/trex_1"
             android:layout_toEndOf="@+id/trex_1"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="-10dp" />
+            android:layout_marginBottom="10dp" />
 
         <Button
             android:onClick="playSound"
@@ -211,6 +197,7 @@
             android:id="@+id/trex_3"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
             android:layout_alignBaseline="@+id/pterodactyl"
             android:layout_alignBottom="@+id/pterodactyl"
             android:layout_toRightOf="@+id/trex_2"
@@ -291,7 +278,7 @@
             android:background="#ffda81"
             android:text="3"
             android:textColor="#000"
-            android:tag="Animals/zoo/facts/sounds/stegasaurus_3.mp3"
+            android:tag="Animals/zoo/facts/sounds/stegosaurus_3.mp3"
             android:id="@+id/stegosaurus_3"
             android:layout_width="25dp"
             android:layout_height="25dp"

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     android:background="@drawable/building8"
     android:layout_weight="1"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <Button
+        android:tag="Vehicles/passenger/sounds/07electric_car.mp3"
+        android:background="@null"
+        android:id="@+id/electric_car1"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="100dp" />
     <Button
         android:background="@null"
         android:layout_height="100dp"
@@ -294,7 +301,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="xtra/15_the_fire_truck_can_shoot_water_out.mp3"
+        android:tag="Vehicles/public/sounds/04ladder_fire_truck.mp3"
         android:background="@null"
         android:id="@+id/fire_truck"
         android:layout_width="380dp"
@@ -326,7 +333,6 @@
         android:layout_toStartOf="@+id/ice_cream_fell" />
 
     <Button
-        android:onClick="playSound"
         android:tag="Vehicles/passenger/sounds/07electric_car.mp3"
         android:background="@null"
         android:id="@+id/electric_car"
@@ -346,14 +352,14 @@
 
     <Button
         android:id="@+id/store_grocery"
-        android:layout_width="50dp"
+        android:layout_width="99dp"
         android:layout_height="70dp"
+        android:layout_above="@+id/german_shepherd"
+        android:layout_alignEnd="@+id/car_wrecked"
+        android:layout_alignRight="@+id/car_wrecked"
         android:background="@null"
         android:onClick="openInterior"
-        android:tag="groceries"
-        android:layout_above="@+id/german_shepherd"
-        android:layout_alignRight="@+id/car_wrecked"
-        android:layout_alignEnd="@+id/car_wrecked" />
+        android:tag="groceries" />
 
     <Button
         android:onClick="openInterior"
@@ -525,17 +531,17 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:onClick="playSound"
-        android:background="@null"
-        android:tag="xtra/15_a_dog_has_a_ball.mp3"
         android:id="@+id/german_shepherd"
+        android:layout_width="36dp"
         android:layout_height="40dp"
-        android:layout_width="60dp"
-        android:layout_alignTop="@+id/boy_basketball"
         android:layout_alignLeft="@+id/carrots"
         android:layout_alignStart="@+id/carrots"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp" />
+        android:layout_alignTop="@+id/boy_basketball"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/15_a_dog_has_a_ball.mp3" />
 
     <Button
         android:onClick="playSound"

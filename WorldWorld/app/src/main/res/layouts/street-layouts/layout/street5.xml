@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     android:layout_weight="1"
     android:background="@drawable/building4">
 
@@ -167,7 +167,7 @@
         android:layout_height="50dp"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Animals/dogs/sounds/05Poodle.mp3"
+        android:tag="Animals/dogs/sounds/05poodle.mp3"
         android:layout_below="@+id/chef"
         android:layout_toRightOf="@+id/chef"
         android:layout_toEndOf="@+id/chef" />
@@ -189,7 +189,7 @@
         android:layout_height="33dp"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Animals/dogs/sounds/11Bloodhound.mp3"
+        android:tag="Animals/dogs/sounds/11bloodhound.mp3"
         android:layout_alignBaseline="@+id/cranetruck"
         android:layout_alignBottom="@+id/cranetruck"
         android:layout_toRightOf="@+id/turtle"
@@ -287,7 +287,7 @@
         android:layout_height="30dp"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Animals/dogs/sounds/04Cocker_spaniel.mp3"
+        android:tag="Animals/dogs/sounds/04cocker_spaniel.mp3"
         android:layout_above="@+id/jeepz"
         android:layout_toRightOf="@+id/football_helmet"
         android:layout_toEndOf="@+id/football_helmet"
@@ -312,7 +312,7 @@
         android:id="@+id/greyhound1"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Animals/dogs/sounds/06Greyhound.mp3"
+        android:tag="Animals/dogs/sounds/06greyhound.mp3"
         android:layout_width="60dp"
         android:layout_alignBottom="@+id/turtle1"
         android:layout_toRightOf="@+id/labrador_retrievera"
@@ -411,14 +411,14 @@
 
     <Button
         android:id="@+id/sign8"
-        android:background="@null"
-        android:onClick="openInterior"
-        android:tag="park"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/SUV"
-        android:layout_toStartOf="@+id/SUV" />
+        android:layout_toStartOf="@+id/SUV"
+        android:background="@null"
+        android:onClick="openInterior"
+        android:tag="park" />
 
     <Button
         android:id="@+id/little_boy_tractor"

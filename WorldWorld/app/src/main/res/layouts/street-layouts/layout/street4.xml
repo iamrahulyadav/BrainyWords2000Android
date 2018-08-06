@@ -109,7 +109,7 @@
             android:layout_toRightOf="@+id/boywheelchair"
             android:background="@null"
             android:onClick="playSound"
-            android:tag="Animals/dogs/sounds/06Greyhound.mp3" />
+            android:tag="Animals/dogs/sounds/06greyhound.mp3" />
 
         <Button
             android:id="@+id/runnergirl"
@@ -197,9 +197,26 @@
 
         <Button
             android:id="@+id/jobstore"
-            android:layout_width="75dp"
-            android:layout_height="100dp"
+            android:layout_width="64dp"
+            android:layout_height="61dp"
             android:layout_alignParentTop="true"
+            android:layout_marginEnd="-9dp"
+            android:layout_marginRight="-9dp"
+            android:layout_marginTop="21dp"
+            android:layout_toLeftOf="@+id/runnergirl"
+            android:layout_toStartOf="@+id/runnergirl"
+            android:background="@null"
+            android:onClick="openInterior"
+            android:tag="job" />
+
+        <Button
+            android:id="@+id/jobstore1"
+            android:layout_width="98dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="-152dp"
+            android:layout_marginRight="-152dp"
+            android:layout_marginTop="5dp"
             android:layout_toLeftOf="@+id/runnergirl"
             android:layout_toStartOf="@+id/runnergirl"
             android:background="@null"

@@ -177,6 +177,22 @@ public class Interior extends AppCompatActivity {
         startActivity(itemsActivity);
     }
 
+    public void openCategoryAlt(View view) {
+        String tag = view.getTag().toString();
+        String cat = Parse(tag); //get cat
+        //Ugly hardcoded stuff
+        if (tag.equals("Health/feelings"))
+            playCategorySound("psychologist");
+        else
+            playCategorySound(cat);
+        while (play.isPlaying()){}
+        Intent itemsActivity = new Intent(this, DisplayItems.class);
+        Bundle b = new Bundle();
+        b.putString("cat",tag);
+        itemsActivity.putExtras(b);
+        startActivity(itemsActivity);
+    }
+
     public void playSound(View view)
     {
         String tag = view.getTag().toString();

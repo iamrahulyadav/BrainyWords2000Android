@@ -179,7 +179,7 @@
         android:id="@+id/beagle1"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Animals/dogs/sounds/02Beagle.mp3"
+        android:tag="Animals/dogs/sounds/02beagle.mp3"
         android:layout_width="25dp"
         android:layout_height="20dp"
                     android:layout_alignBottom="@+id/ladder"
@@ -479,14 +479,14 @@
 
                 <Button
                     android:id="@+id/monkey_bars1"
+                    android:layout_width="44dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/path3"
+                    android:layout_toEndOf="@+id/benchd"
+                    android:layout_toRightOf="@+id/benchd"
                     android:background="@null"
                     android:onClick="playSound"
-                    android:tag="Outdoors/park/equipment/sounds/03monkey_bars.mp3"
-                    android:layout_height="40dp"
-                    android:layout_width="60dp"
-                    android:layout_below="@+id/path3"
-                    android:layout_toRightOf="@+id/benchd"
-                    android:layout_toEndOf="@+id/benchd" />
+                    android:tag="Outdoors/park/equipment/sounds/03monkey_bars.mp3" />
 
                 <Button
                     android:id="@+id/father"

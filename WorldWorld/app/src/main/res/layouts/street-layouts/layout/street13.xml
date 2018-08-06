@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     android:background="@drawable/building12"
     android:layout_weight="1"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -457,7 +457,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="People/people/boys/sounds/boy_texting.mp3"
+        android:tag="xtra/25_i_do_arithmetic_with_my_calculator.mp3"
         android:background="@null"
         android:id="@+id/boy_walking_texting"
         android:layout_height="70dp"
@@ -538,17 +538,18 @@
 
     <Button
         android:id="@+id/store_nursery"
-        android:layout_width="85dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:background="@null"
-        android:onClick="openInterior"
-        android:tag="nursery"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
         android:layout_alignBaseline="@+id/clock"
         android:layout_alignBottom="@+id/clock"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="-49dp"
+        android:layout_marginRight="-49dp"
         android:layout_toLeftOf="@+id/woman_groceries"
-        android:layout_toStartOf="@+id/woman_groceries" />
+        android:layout_toStartOf="@+id/woman_groceries"
+        android:background="@null"
+        android:onClick="openInterior"
+        android:tag="nursery" />
 
     <Button
         android:onClick="playSound"

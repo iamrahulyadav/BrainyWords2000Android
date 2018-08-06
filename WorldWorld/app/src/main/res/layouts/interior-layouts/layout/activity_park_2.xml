@@ -235,7 +235,7 @@
         android:id="@+id/rabbita"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Animals/farm/animals/sounds/25rabbit.mp3"
+        android:tag="Animals/pets/sounds/15bunny.mp3"
                     android:layout_width="50dp"
         android:layout_height="80dp"
                     android:layout_alignTop="@+id/turtle1"

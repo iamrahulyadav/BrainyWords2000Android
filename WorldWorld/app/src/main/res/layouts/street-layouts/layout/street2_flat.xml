@@ -53,8 +53,32 @@
 
     <Button android:background="@null" android:id="@+id/carpenter_chiseling1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="75dp" android:layout_marginLeft="413dp" android:layout_marginStart="413dp" android:layout_marginTop="120dp" android:layout_width="25dp" android:onClick="playSound" android:tag="xtra/carpenter_chiseling_with_a_chisel.mp3" />
 
-    <Button android:background="@null" android:id="@+id/bed1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="100dp" android:layout_marginLeft="740dp" android:layout_marginStart="740dp" android:layout_marginTop="60dp" android:layout_width="138dp" android:onClick="playSound" android:tag="xtra/01bed.mp3" />
+    <Button
+        android:id="@+id/bed1"
+        android:layout_width="77dp"
+        android:layout_height="66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="801dp"
+        android:layout_marginStart="801dp"
+        android:layout_marginTop="94dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/01bed.mp3" />
 
-
+    <Button
+        android:id="@+id/bed2"
+        android:layout_width="54dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="746dp"
+        android:layout_marginStart="746dp"
+        android:layout_marginTop="26dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="xtra/01bed.mp3" />
 
 </RelativeLayout>

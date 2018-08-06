@@ -77,7 +77,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="Animals/dogs/sounds/02Beagle.mp3"
+        android:tag="Animals/dogs/sounds/02beagle.mp3"
         android:background="@null"
         android:id="@+id/beagle"
         android:layout_height="35dp"
@@ -123,7 +123,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="Animals/farm/animals/sounds/15ewe.m4a"
+        android:tag="Animals/farm/animals/sounds/15ewe.mp3"
         android:background="@null"
         android:id="@+id/ewe"
         android:layout_width="40dp"
@@ -213,7 +213,7 @@
 
     <Button
         android:onClick="playSound"
-        android:tag="Animals/farm/animals/sounds/08Drake_.mp3"
+        android:tag="Animals/farm/animals/sounds/08drake_.mp3"
         android:background="@null"
         android:id="@+id/drake"
         android:layout_width="30dp"

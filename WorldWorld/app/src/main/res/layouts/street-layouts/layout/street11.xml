@@ -19,18 +19,18 @@
         android:layout_width="65dp" />
 
     <Button
-        android:onClick="openInterior"
-        android:tag="tools"
-        android:background="@null"
         android:id="@+id/store_tools"
+        android:layout_width="155dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="265dp"
         android:layout_marginStart="265dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/store_hairsalon"
-        android:layout_toEndOf="@+id/store_hairsalon"
         android:layout_marginTop="18dp"
-        android:layout_height="75dp"
-        android:layout_width="70dp" />
+        android:layout_toEndOf="@+id/store_hairsalon"
+        android:layout_toRightOf="@+id/store_hairsalon"
+        android:background="@null"
+        android:onClick="openInterior"
+        android:tag="tools" />
 
     <Button
         android:onClick="playSound"
@@ -90,6 +90,18 @@
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/store_tools"
         android:layout_toStartOf="@+id/store_tools" />
+
+    <Button
+        android:id="@+id/bucket3"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@+id/store_tools"
+        android:layout_toStartOf="@+id/store_tools"
+        android:background="@null"
+        android:onClick="playSound"
+        android:tag="House/housewares/sounds/10bucket.mp3" />
 
     <Button
         android:onClick="playSound"
@@ -271,8 +283,9 @@
         android:layout_width="40dp"
         android:layout_height="60dp"
         android:layout_alignTop="@+id/circular_saw"
-        android:layout_toRightOf="@+id/store_tools"
-        android:layout_toEndOf="@+id/store_tools" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="570dp"/>
 
     <Button
         android:onClick="playSound"

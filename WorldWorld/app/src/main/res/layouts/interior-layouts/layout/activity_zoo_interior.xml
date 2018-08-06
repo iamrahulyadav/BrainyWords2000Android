@@ -47,7 +47,8 @@
             android:layout_width="140dp"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/reptiles"
-            android:layout_alignEnd="@+id/reptiles" />
+            android:layout_alignEnd="@+id/reptiles"
+            android:layout_marginRight="100dp"/>
 
         <Button
             android:onClick="openInterior"

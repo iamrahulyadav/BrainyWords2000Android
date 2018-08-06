@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     android:background="@drawable/building5"
     android:layout_weight="1">
 
@@ -28,11 +28,11 @@
         android:layout_height="100dp"
         android:id="@+id/clothingstore"
         android:layout_width="75dp"
-        android:layout_marginRight="23dp"
-        android:layout_marginEnd="23dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="920dp"
+        android:layout_marginStart="920dp"
+        android:layout_alignParentTop="true" />
 
     <Button
         android:onClick="openInterior"
@@ -154,10 +154,10 @@
         android:onClick="playSound"
         android:tag="xtra/09_the_crossing_guard_tells_you_to_stop.mp3"
         android:layout_above="@+id/schoolbus"
-        android:layout_alignRight="@+id/schoolbus"
-        android:layout_alignEnd="@+id/schoolbus"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="975dp"
+        android:layout_marginStart="975dp" />
 
     <Button
         android:id="@+id/girl_with_doll"
@@ -229,13 +229,14 @@
 
     <Button
         android:id="@+id/movingtruck"
-        android:layout_width="130dp"
+        android:layout_width="146dp"
         android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sleepy_dog1"
+        android:layout_marginLeft="459dp"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Vehicles/truck/sounds/14moving_truck.mp3"
-        android:layout_alignTop="@+id/sleepy_dog1"
-        android:layout_centerHorizontal="true" />
+        android:tag="Vehicles/truck/sounds/14moving_truck.mp3" />
 
     <Button
         android:id="@+id/seal"
@@ -335,13 +336,14 @@
     <Button
         android:id="@+id/policecar"
         android:layout_width="55dp"
-        android:layout_height="40dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="132dp"
+        android:layout_toEndOf="@+id/shirt"
+        android:layout_toRightOf="@+id/shirt"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="Vehicles/public/sounds/06police_car.mp3"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/shirt"
-        android:layout_toEndOf="@+id/shirt" />
+        android:tag="Vehicles/public/sounds/06police_car.mp3" />
 
     <Button
         android:id="@+id/policecar1"
@@ -478,8 +480,9 @@
         android:onClick="playSound"
         android:tag="xtra/the_library_ladys_hamster_likes_to_hear_nursery_rhymes.mp3"
         android:layout_above="@+id/policecar"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
 
     <Button
         android:id="@+id/soccer_ball1"

@@ -18,17 +18,29 @@
 
         <Button android:background="@null" android:id="@+id/broken_pipe" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="60dp" android:layout_marginLeft="130dp" android:layout_marginStart="130dp" android:layout_marginTop="63dp" android:layout_width="60dp" android:onClick="playSound" android:tag="Construction/sounds/12broken_pipes_spraying_water.mp3" />
 
-        <Button android:background="@null" android:id="@+id/bucket1" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_alignParentTop="true" android:layout_height="50dp" android:layout_marginLeft="215dp" android:layout_marginStart="215dp" android:layout_marginTop="125dp" android:layout_width="56dp" android:onClick="playSound" android:tag="House/housewares/sounds/10bucket.mp3" />
+        <Button
+            android:id="@+id/bucket1"
+            android:layout_width="22dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="271dp"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="184dp"
+            android:background="@null"
+            android:onClick="playSound"
+            android:tag="House/housewares/sounds/10bucket.mp3" />
 
         <Button
             android:id="@+id/custodian_with_mop"
-            android:layout_width="41dp"
+            android:layout_width="23dp"
             android:layout_height="82dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="276dp"
-            android:layout_marginStart="276dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginStart="294dp"
             android:layout_marginTop="120dp"
             android:background="@null"
             android:onClick="playSound"
@@ -98,7 +110,7 @@
             android:layout_marginTop="186dp"
             android:background="@null"
             android:onClick="playSound"
-            android:tag="People/things/work/sounds/11shovel.mp3" />
+            android:tag="Mall/tools/rock_dirt/sounds/03spade.mp3" />
 
         <Button
             android:id="@+id/man_proposing"
