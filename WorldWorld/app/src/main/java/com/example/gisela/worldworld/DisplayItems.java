@@ -131,7 +131,6 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
                     String[] path = assets.list(cat + "/sounds");
 
                     play.reset();
-                    play = new MediaPlayer();
 
                     // get an InputStream to the asset representing the next item
                     //provide access to the file
@@ -175,7 +174,6 @@ public class DisplayItems extends AppCompatActivity implements MyAdapter.ClickLi
         b.putString("cat", cat);
         quizActivity.putExtras(b);
         startActivity(quizActivity);
-
     }
 
     public void goBack(View view)

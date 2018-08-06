@@ -257,10 +257,9 @@ public class Quiz extends AppCompatActivity {
             }
     }
 
-    public List<QuestionLibrary> getQuizData()
+    public void getQuizData()
     {
-        MediaPlayer mSoundQuestion;
-        List<QuestionLibrary> data = new ArrayList<>();
+        final MediaPlayer mSoundQuestion;
         Drawable image1;
         Drawable image2;
         Drawable image3;
@@ -320,7 +319,12 @@ public class Quiz extends AppCompatActivity {
 
             mSoundQuestion = new MediaPlayer();
             mSoundQuestion.setDataSource(openassets.getFileDescriptor(),openassets.getStartOffset(),openassets.getLength());
-
+            mSoundQuestion.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    mediaPlayer.release();
+                }
+            });
 
             //get all the paths of the files inside the category folder
             List<String> imagepath = new LinkedList<String>(Arrays.asList(assets.list(cat)));
@@ -386,18 +390,11 @@ public class Quiz extends AppCompatActivity {
             }
 
             mQuestionLibrary = new QuestionLibrary(mSoundQuestion, questionText, image1, image2, image3, image4, correctImage);
-            data.add(mQuestionLibrary);
-
-
         } // end try
         catch (IOException e)
         {
             System.out.print(e.toString());
         } // end catch
-
-        return  data;
-
-
     }
 
     public void checkAnswer(View view)
@@ -437,7 +434,6 @@ public class Quiz extends AppCompatActivity {
             try
             {
                 play.reset();
-                play = new MediaPlayer();
 
                 //open audio file from Assets folder
                 openassets = getAssets().openFd(path);
@@ -491,7 +487,6 @@ public class Quiz extends AppCompatActivity {
             n = num.nextInt(congrats.size()-1);
 
             play.reset();
-            play = new MediaPlayer();
             openassets = getAssets().openFd(path + "/" + congrats.get(n));
             play.setDataSource(openassets.getFileDescriptor(),openassets.getStartOffset(),openassets.getLength());
             play.prepare();

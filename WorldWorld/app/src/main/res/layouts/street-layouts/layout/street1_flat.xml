@@ -119,7 +119,7 @@
         android:layout_marginTop="183dp"
         android:background="@null"
         android:onClick="playSound"
-        android:tag="xtra/trash_can_4x.mp3" />
+        android:tag="xtra/trash_can.mp3" />
 
     <Button
         android:id="@+id/flatbed_trucka"

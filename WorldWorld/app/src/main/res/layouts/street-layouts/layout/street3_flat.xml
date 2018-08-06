@@ -283,7 +283,7 @@
         <Button
             android:id="@+id/jack_lantern"
             android:layout_width="24dp"
-            android:layout_height="23dp"
+            android:layout_height="73dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginLeft="816dp"
